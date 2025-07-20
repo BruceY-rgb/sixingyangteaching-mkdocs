@@ -1,0 +1,14 @@
+site_name: My Docs
+theme:
+  name: dracula
+  features:
+    - navigation.tabs
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: orange
+nav:
+  - 首页: index.md
+  - 课程资料: source.md
+  - 课程作业: homework.md
