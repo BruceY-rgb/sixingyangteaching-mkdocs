@@ -2,7 +2,7 @@
 # Welcome to 杨思行的C语言课堂 ✨
 
 <div style="text-align: center; margin: 40px 0;">
-    <img src="assets/c_icon.png" alt="C语言图标" width="150" style="border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+    <img src="D:\sixingyangteaching-mkdocs\assets\c_icon.png" alt="C语言图标" width="150" style="border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 </div>
 
 ## 🚀 课程特色
@@ -29,7 +29,6 @@ int main(void){
 ## 📌 学习资源
 - [C语言官方文档](https://devdocs.io/c/)
 - [在线编译器](https://godbolt.org/)
-- [代码规范手册](assets/c_style_guide.pdf)
 
 <hr>
 
