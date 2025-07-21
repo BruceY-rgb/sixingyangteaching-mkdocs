@@ -2,8 +2,8 @@
 
 | 授课日 | 主题                 | PPT讲义 | 代码案例 | 课后作业 | 补充资料 |
 |--------|----------------------|---------|----------|----------|----------|
-| Day 1  | C语言基础语法        |[绪论](day1/chap00绪论.pptx),[引言](day1/chap01引言.pptx)         |[参考代码](day1/code.zip)          |[作业1](day1/hw1.pdf)          |          |
-| Day 2  | 流程控制             |[用C语言编写程序](day2/chap02用C语言编写程序.pptx)         |          |          |          |
+| Day 1  | C语言基础语法        |[绪论](day1/chap00绪论.pptx),[引言](day1/chap01引言.pptx)         |[参考代码](day1/code.zip)          |[作业1](day1/hw1.pdf)          |[C语言的运算符优先级](https://blog.csdn.net/yuliying/article/details/72898132)          |
+| Day 2  | 流程控制             |[用C语言编写程序](day2/chap02用C语言编写程序.pptx) [分支结构](day2/chap03分支结构.pptx)         |[参考代码](day2/code.zip)          |[作业2](day2/hw2.pdf)          |          |
 | Day 3  | 函数与模块化         |         |          |          |          |
 | Day 4  | 数组与字符串         |         |          |          |          |
 | Day 5  | 指针基础             |         |          |          |          |
