@@ -161,11 +161,22 @@
 <li><strong>实战驱动学习</strong>：每课配套编程练习与项目  </li>
 </ul>
 <h2 id="_2">🎯 今日精选</h2>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-// 经典：Hello World!
-int main(void){
-    printf(&quot;Hello World!\n&quot;);
+<pre><code class="language-c"># include &lt;stdio.h&gt;
+int main (void)
+{
+    double x, y; 
+    printf (&quot;Enter x (x&gt;=0):\n&quot;);  /* 输入提示 */
+    scanf (&quot;%lf&quot;, &amp;x);                  /* 调用scanf函数输入数据 */
+    if ( x &lt;= 15 ){                    /*  if – else语句 */
+         y = 4 * x / 3; 
+    }else {
+        y = 2.5 * x - 10.5;   
+    }          
+    printf (&quot;f(%f) = %.2f\n&quot;, x, y); 
+
+    return 0;
 }
+
 </code></pre>
 <h2 id="_3">📅 课程安排</h2>
 <table>
