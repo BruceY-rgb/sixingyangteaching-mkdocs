@@ -40,6 +40,7 @@ int main (void)
 ## 📌 学习资源
 - [C语言官方文档](https://devdocs.io/c/)
 - [在线编译器](https://godbolt.org/)
+- [C语言在线运行平台](https://www.onlinegdb.com/)
 
 <hr>
 
