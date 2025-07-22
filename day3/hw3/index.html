@@ -2,24 +2,24 @@
 <html lang="en">
 
 <head>
-        <title>My Docs</title>
+        <title>Hw3 - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="description" content="None">
+        
         
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="assets/css/darcula-highlight.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
 
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/dracula-ui.min.css">
-        <link rel="stylesheet" href="assets/css/mkdocs.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -66,14 +66,14 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="."
-                    class=" active 
+                <a href="../.."
+                    class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     首页
                 </a>
             </li>
             <li class="drac-box">
-                <a href="source/"
+                <a href="../../source/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     课程资料
@@ -104,28 +104,12 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
-        <div class="container">
-            <div class="row row-preview">
-                <div class="col">
-                    <a 
-                        class="btn-preview drac-btn drac-text-white--hover disabled">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="source/"
-                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -150,73 +134,48 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="welcome-to-c">Welcome to 杨思行的C语言课堂 ✨</h1>
-<div style="text-align: center; margin: 40px 0;">
-    <img src="https://ts1.tc.mm.bing.net/th/id/R-C.9a864b6b5a4df041d6fddd72b6e12455?rik=ehi3u30l1%2fPx%2fQ&riu=http%3a%2f%2fwww.w3schools.cn%2fwp-content%2fuploads%2fc%2fc-logo.png&ehk=ZIVUd12vPYpOwaMUCTzsLkK8aukj5cnzsRADTdxoKfM%3d&risl=&pid=ImgRaw&r=0" alt="C语言图标" width="150" style="border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-</div>
+        <p><h2 id="3">作业3</h2>
+<p><strong>1</strong>以下四个选项中，不能看作是一条语句的是()</p>
+<p>A {;}</p>
+<p>B a=0,b=0,c=0;</p>
+<p>C if(a&gt;0)</p>
+<p>D if(b==0) m=1;n=2;</p>
+<p><strong>2</strong> 有以下程序</p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
 
-<h2 id="_1">🚀 课程特色</h2>
-<ul>
-<li><strong>零基础直达进阶</strong>：从"Hello World"到指针/数据结构  </li>
-<li><strong>实战驱动学习</strong>：每课配套编程练习与项目  </li>
-</ul>
-<h2 id="_2">🎯 今日精选</h2>
-<pre><code class="language-c"># include &lt;stdio.h&gt;
-int main (void)
-{
-    int sum = 0;
-    for(int i = 0;i &lt; 100;i++)
-    {
-        sum = sum + i;
+int main(void){
+    int a = 5,b = 4,c = 3,d = 2;
+    if(a&gt;b &amp;&amp; b&gt;c){
+        printf(&quot;%d\n&quot;,d);
     }
-
-    printf(&quot;1+2+...+100=%d&quot;,sum);
-
-    return 0;
+    else if((c-1&gt;=d)==1){
+        printf(&quot;%d\n&quot;,d+1);
+    }
+    else{
+        printf(&quot;%d\n&quot;,d+2);
+    }
 }
-
 </code></pre>
-<h2 id="_3">📅 课程安排</h2>
-<table>
-<thead>
-<tr>
-<th>天次</th>
-<th>主题</th>
-<th>难度</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>绪论、引言、常量变量和数据类型</td>
-<td>⭐</td>
-</tr>
-<tr>
-<td>2</td>
-<td>运算符、分支结构</td>
-<td>⭐⭐</td>
-</tr>
-<tr>
-<td>3</td>
-<td>循环结构</td>
-<td>⭐⭐</td>
-</tr>
-<tr>
-<td>4</td>
-<td>函数</td>
-<td>⭐⭐⭐</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_4">📌 学习资源</h2>
+<p>则最终的执行结果是()</p>
+<p>A 2</p>
+<p>B 3</p>
+<p>C 4</p>
+<p>D 编译时有错误，无结果</p>
+<p><strong>3</strong> 程序实现：使用for循环语句实现从1到100的输出</p>
+<p><strong>4</strong> 写一个C语言程序，求</p>
+<p>$$
+\sum_{k=1}^{100}k + \sum_{k=1}{50}k^2+\sum_{k=1}{10}\frac{1}{k}
+$$</p>
 <ul>
-<li><a href="https://devdocs.io/c/">C语言官方文档</a></li>
-<li><a href="https://godbolt.org/">在线编译器</a></li>
-<li><a href="https://www.onlinegdb.com/">C语言在线运行平台</a></li>
+<li>运行结果：<code>sum = 47977.928968</code></li>
 </ul>
-<hr>
-
-<p><small>✨ 提示：按 <code>Ctrl+K</code> 快速搜索课程内容</small></p></p>
+<p><strong>5</strong> 输出所有的水仙花数，所谓水仙花数是指一个<strong>3位数</strong>（从100到999的所有数中进行筛选），其各位数字立方和等于该数本身。例如：153是一水仙花数，因为$153 = 1^3 + 5^3 + 3^3$。</p>
+<blockquote>
+<p>提示：一个三位数各个数位可以通过求余和除以10的方式实现。其中个位数 = 该数%10，十位数 = 该数/10 - 百位数<em>10，百位数 = 该数/(100) 。例如：153的百位数 = 153/(100) = 1，百位数为1，十位数 = 153/10 - 1</em>10 = 5，个位数 = 153%10 = 3。</p>
+</blockquote>
+<ul>
+<li>输出：153 370 371 407</li>
+</ul></p>
     </article>
 </section>
             <!-- endblock -->
@@ -235,11 +194,11 @@ int main (void)
 
     </main>
 
-        <script>var base_url = '.';</script>
-        <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/mkdocs.js"></script>
-			<script src="search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
 
 </body>
 
