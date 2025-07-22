@@ -20,7 +20,7 @@ int main (void)
         sum = sum + i;
     }
     
-    printf("1+2+...+100=%d",sum);
+    printf("1+2+...+100=%d",sum); //循环求和
 
     return 0;
 }
