@@ -20,7 +20,7 @@ int main(void){
     if(a>b && b>c){
         printf("%d\n",d);
     }
-    else if((c-1>=d)==1){
+    if((c-1>=d)==1){
         printf("%d\n",d+1);
     }
     else{
