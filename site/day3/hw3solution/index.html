@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Hw3 - My Docs</title>
+        <title>Hw3solution - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,48 +134,97 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h2 id="3">作业3</h2>
-<p><strong>1</strong>以下四个选项中，不能看作是一条语句的是()</p>
-<p>A {;}</p>
-<p>B a=0,b=0,c=0;</p>
-<p>C if(a&gt;0)</p>
-<p>D if(b==0) m=1;n=2;</p>
-<p><strong>2</strong> 有以下程序</p>
+        <p><h3 id="3"><strong>作业3 答案与解析</strong></h3>
+<hr />
+<h4 id="1"><strong>1. 以下四个选项中，不能看作是一条语句的是()</strong></h4>
+<p><strong>选项</strong>：<br />
+A <code>{;}</code><br />
+B <code>a=0,b=0,c=0;</code><br />
+C <code>if(a&gt;0)</code><br />
+D <code>if(b==0) m=1;n=2;</code>  </p>
+<p><strong>答案</strong>：<strong>C</strong><br />
+<strong>解析</strong>：<br />
+- <strong>A</strong>：<code>{;}</code> 是一个空复合语句，合法。<br />
+- <strong>B</strong>：逗号表达式，是一条语句。<br />
+- <strong>C</strong>：<code>if(a&gt;0)</code> 缺少后续语句或代码块，不完整。<br />
+- <strong>D</strong>：<code>if</code> 条件后跟 <code>m=1;</code>，<code>n=2;</code> 是独立语句，整体合法。  </p>
+<hr />
+<h4 id="2"><strong>2. 有以下程序，最终的执行结果是()</strong></h4>
 <pre><code class="language-c">#include &lt;stdio.h&gt;
-
 int main(void){
-    int a = 5,b = 4,c = 3,d = 2;
-    if(a&gt;b &amp;&amp; b&gt;c){
-        printf(&quot;%d\n&quot;,d);
-    }
-    if((c-1&gt;=d)==1){
-        printf(&quot;%d\n&quot;,d+1);
-    }
-    else{
-        printf(&quot;%d\n&quot;,d+2);
-    }
+    int a=5,b=4,c=3,d=2;
+    if(a&gt;b &amp;&amp; b&gt;c) printf(&quot;%d\n&quot;,d);          // 条件成立，输出2
+    if((c-1&gt;=d)==1) printf(&quot;%d\n&quot;,d+1);      // c-1&gt;=d为真(1)，输出3
+    else printf(&quot;%d\n&quot;,d+2);                 // 不执行
 }
 </code></pre>
-<p>则最终的执行结果是()</p>
-<p>A 2</p>
-<p>B 3</p>
-<p>C 4</p>
-<p>D 编译时有错误，无结果</p>
-<p><strong>3</strong> 程序实现：使用for循环语句实现从1到100的输出</p>
-<p><strong>4</strong> 写一个C语言程序，求</p>
-<p>$$
-\sum_{k=1}^{100}k + \sum_{k=1}^{50}k^2+\sum_{k=1}^{10}\frac{1}{k}
-$$</p>
-<ul>
-<li>运行结果：<code>sum = 47977.928968</code></li>
-</ul>
-<p><strong>5</strong> 输出所有的水仙花数，所谓水仙花数是指一个<strong>3位数</strong>（从100到999的所有数中进行筛选），其各位数字立方和等于该数本身。例如：153是一水仙花数，因为$153 = 1^3 + 5^3 + 3^3$。</p>
-<blockquote>
-<p>提示：一个三位数各个数位可以通过求余和除以10的方式实现。其中<code>个位数 = 该数%10，十位数 = 该数/10 - 百位数*10，百位数 = 该数/(100) 。例如：153的百位数 = 153/(100) = 1，百位数为1，十位数 = 153/10 - 1×10 = 5，个位数 = 153%10 = 3。</code></p>
-</blockquote>
-<ul>
-<li>输出：153 370 371 407</li>
-</ul></p>
+<p><strong>答案</strong>：<strong>A 2 和 B 3</strong><br />
+<strong>解析</strong>：<br />
+1. 第一个 <code>if</code> 条件 <code>5&gt;4 &amp;&amp; 4&gt;3</code> 为真，输出 <code>d=2</code>。<br />
+2. 第二个 <code>if</code> 条件 <code>(3-1&gt;=2)==1</code> 即 <code>(1)==1</code> 为真，输出 <code>d+1=3</code>。<br />
+3. <code>else</code> 不执行。<br />
+<strong>注</strong>：原题选项设计有误，实际输出两行：<code>2</code> 和 <code>3</code>。</p>
+<hr />
+<h4 id="3-for1100"><strong>3. 使用for循环语句实现从1到100的输出</strong></h4>
+<p><strong>代码</strong>：  </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    for(int i=1; i&lt;=100; i++) {
+        printf(&quot;%d &quot;, i);
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>解析</strong>：<br />
+- <code>for</code> 循环初始化 <code>i=1</code>，条件 <code>i&lt;=100</code>，步进 <code>i++</code>。<br />
+- 输出1到100的数字，空格分隔。</p>
+<hr />
+<h4 id="4"><strong>4. 计算三个求和公式的值</strong></h4>
+<p><strong>公式</strong>：<br />
+$$
+\sum_{k=1}^{100}k + \sum_{k=1}^{50}k^2 + \sum_{k=1}^{10}\frac{1}{k}
+$$<br />
+<strong>代码</strong>：  </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    double sum = 0;
+
+    // 第一个求和：1+2+...+100
+    for(int k=1; k&lt;=100; k++) sum += k;
+
+    // 第二个求和：1²+2²+...+50²
+    for(int k=1; k&lt;=50; k++) sum += k*k;
+
+    // 第三个求和：1/1+1/2+...+1/10
+    for(int k=1; k&lt;=10; k++) sum += 1.0/k;
+
+    printf(&quot;sum = %.6f\n&quot;, sum);  // 输出：47977.928968
+    return 0;
+}
+</code></pre>
+<p><strong>解析</strong>：<br />
+- 前两个求和用整型循环，第三个求和需用 <code>1.0/k</code> 避免整数除法。<br />
+- 结果保留6位小数。</p>
+<hr />
+<h4 id="5"><strong>5. 输出所有水仙花数</strong></h4>
+<p><strong>代码</strong>：  </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    for(int num=100; num&lt;=999; num++) {
+        int a = num / 100;       // 百位
+        int b = (num / 10) % 10; // 十位
+        int c = num % 10;        // 个位
+        if(num == a*a*a + b*b*b + c*c*c) {
+            printf(&quot;%d &quot;, num);
+        }
+    }
+    return 0;
+}
+</code></pre>
+<p><strong>解析</strong>：<br />
+- 遍历100到999的所有三位数。<br />
+- 分解百位、十位、个位，检查是否满足立方和等于自身。<br />
+- 输出：<code>153 370 371 407</code>。  </p></p>
     </article>
 </section>
             <!-- endblock -->
