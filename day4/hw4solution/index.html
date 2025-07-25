@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Hw4solution - My Docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    首页
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../source/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    课程资料
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h3 id="4"><strong>作业4 答案与解析</strong></h3>
+<hr />
+<h4 id="1"><strong>1. 循环体执行次数</strong></h4>
+<p><strong>题目</strong>：  </p>
+<pre><code class="language-c">x = -1;
+do {
+    x = x * x;
+} while (!x);
+</code></pre>
+<p><strong>答案</strong>：<strong>A 一次</strong><br />
+<strong>解析</strong>：<br />
+1. 初始 <code>x = -1</code>。<br />
+2. 第一次循环：<code>x = (-1) * (-1) = 1</code>，此时 <code>!x</code> 为 <code>0</code>（假），循环终止。  </p>
+<hr />
+<h4 id="2-whilee"><strong>2. 条件 <code>while(!e)</code> 的等价形式</strong></h4>
+<p><strong>题目</strong>：<code>while(!e)</code> 的条件等价于？<br />
+<strong>答案</strong>：<strong>A e==0</strong><br />
+<strong>解析</strong>：<br />
+- <code>!e</code> 表示逻辑非，当 <code>e</code> 为 <code>0</code> 时 <code>!e</code> 为真，否则为假。<br />
+- 因此 <code>!e</code> 等价于 <code>e == 0</code>。  </p>
+<hr />
+<h4 id="3-while-do-while"><strong>3. <code>while</code> 和 <code>do-while</code> 的主要区别</strong></h4>
+<p><strong>题目</strong>：C语言中两者的主要区别是？<br />
+<strong>答案</strong>：<strong>A do-while的循环体至少无条件执行一次</strong><br />
+<strong>解析</strong>：<br />
+- <code>do-while</code> 先执行循环体，再判断条件；<code>while</code> 先判断条件再执行。<br />
+- 其他选项错误：<br />
+  - B：条件严格性无必然关系。<br />
+  - C：两者均允许 <code>goto</code> 跳转。<br />
+  - D：两者均支持复合语句。  </p>
+<hr />
+<h4 id="4_1"><strong>4. 程序段输出结果</strong></h4>
+<p><strong>题目</strong>：  </p>
+<pre><code class="language-c">int k, n, m;
+n = 10;
+m = 1;
+k = 1;
+while (k &lt;= n) {
+    m = m * 2;
+    k = k + 4;
+}
+printf(&quot;%d&quot;, m);
+</code></pre>
+<p><strong>答案</strong>：<strong>C 8</strong><br />
+<strong>解析</strong>：<br />
+| 循环次数 | k 值 | m 值（<code>m *= 2</code>） | 条件 <code>k &lt;= 10</code> |<br />
+|----------|------|------------------|----------------|<br />
+| 1        | 1    | 2                | 真             |<br />
+| 2        | 5    | 4                | 真             |<br />
+| 3        | 9    | 8                | 真             |<br />
+| 4        | 13   | -                | 假（终止）     |<br />
+最终 <code>m = 8</code>。  </p>
+<hr />
+<h4 id="5-n"><strong>5. 计算前n项之和</strong></h4>
+<p><strong>题目</strong>：求 $1 + \frac{1}{4} + \frac{1}{7} + \cdots + \frac{1}{3n-2}$。<br />
+<strong>输入样例1</strong>：<code>5</code> → <strong>输出</strong>：<code>1.56978</code><br />
+<strong>参考代码</strong>：  </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    int n;
+    double sum = 0.0;
+    scanf(&quot;%d&quot;, &amp;n);
+    for (int i = 1; i &lt;= n; i++) {
+        sum += 1.0 / (3 * i - 2);  // 注意用 1.0 避免整数除法
+    }
+    printf(&quot;%.5f\n&quot;, sum);
+    return 0;
+}
+</code></pre>
+<p><strong>关键点</strong>：<br />
+- 通项公式为 $\frac{1}{3i-2}$（<code>i</code> 从 1 到 <code>n</code>）。<br />
+- 使用 <code>1.0</code> 确保浮点数运算。  </p>
+<hr />
+<h4 id="6"><strong>6. 数字各位之和</strong></h4>
+<p><strong>题目</strong>：输入正整数，输出各位数字之和。<br />
+<strong>输入样例</strong>：<code>123</code> → <strong>输出</strong>：<code>6</code><br />
+<strong>参考代码</strong>：  </p>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+int main() {
+    int num, sum = 0;
+    scanf(&quot;%d&quot;, &amp;num);
+    while (num &gt; 0) {
+        sum += num % 10;  // 取个位数
+        num /= 10;        // 去掉个位数
+    }
+    printf(&quot;%d\n&quot;, sum);
+    return 0;
+}
+</code></pre>
+<p><strong>解析</strong>：<br />
+- <code>num % 10</code> 获取当前个位数。<br />
+- <code>num /= 10</code> 去掉已处理的个位数。  </p>
+<hr /></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

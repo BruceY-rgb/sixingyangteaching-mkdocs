@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>课程资料 - My Docs</title>
+        <title>作业5 - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,14 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="../assets/css/darcula-highlight.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
 
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/dracula-ui.min.css">
-        <link rel="stylesheet" href="../assets/css/mkdocs.min.css">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -66,15 +66,15 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href=".."
+                <a href="../.."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     首页
                 </a>
             </li>
             <li class="drac-box">
-                <a href="./"
-                    class=" active 
+                <a href="../../source/"
+                    class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     课程资料
                 </a>
@@ -104,28 +104,12 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
-        <div class="container">
-            <div class="row row-preview">
-                <div class="col">
-                    <a href=".."
-                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
-                        <i class="fa fa-arrow-left"></i> Previous
-                    </a>
-                </div>
-                <div class="col">
-                    <a 
-                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
-                        Next <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -150,117 +134,106 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="_1">📚 课程资源管理</h1>
+        <p><h1 id="5">作业5</h1>
+<h3 id="c"><strong>C++ 循环控制语句选择题</strong></h3>
+<hr />
+<h4 id="1-break"><strong>1. 关于 <code>break</code> 语句的作用，以下说法正确的是？</strong></h4>
+<p>A. 跳过当前循环的剩余部分，直接进入下一次循环<br />
+B. 终止当前循环，并跳出循环体<br />
+C. 终止整个程序的执行<br />
+D. 仅能在 <code>switch</code> 语句中使用  </p>
+<p><strong>答案：B</strong><br />
+<strong>解析</strong>：<code>break</code> 用于<strong>立即终止当前循环</strong>（如 <code>for</code>、<code>while</code>、<code>do-while</code>）或 <code>switch</code> 语句，而非跳过或终止程序。  </p>
+<hr />
+<h4 id="2"><strong>2. 以下代码的输出结果是什么？</strong></h4>
+<pre><code class="language-cpp">for (int i = 1; i &lt;= 5; i++) {
+    if (i == 3) continue;
+    cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+}
+</code></pre>
+<p>A. <code>1 2 3 4 5</code><br />
+B. <code>1 2 4 5</code><br />
+C. <code>3</code><br />
+D. <code>1 2</code>  </p>
+<p><strong>答案：B</strong><br />
+<strong>解析</strong>：<code>continue</code> 跳过 <code>i == 3</code> 的迭代，因此输出不包含 <code>3</code>。  </p>
+<hr />
+<h4 id="3-break"><strong>3. 以下代码中，<code>break</code> 会终止哪个循环？</strong></h4>
+<pre><code class="language-cpp">for (int i = 0; i &lt; 3; i++) {
+    for (int j = 0; j &lt; 3; j++) {
+        if (j == 1) break;
+        cout &lt;&lt; i &lt;&lt; &quot;,&quot; &lt;&lt; j &lt;&lt; &quot; &quot;;
+    }
+}
+</code></pre>
+<p>A. 仅内层循环<br />
+B. 仅外层循环<br />
+C. 所有循环<br />
+D. 编译错误  </p>
+<p><strong>答案：A</strong><br />
+<strong>解析</strong>：<code>break</code> 默认终止<strong>最近的循环</strong>（此处为内层 <code>j</code> 循环）。  </p>
+<hr />
+<h4 id="4"><strong>4. 以下代码的输出结果是什么？</strong></h4>
+<pre><code class="language-cpp">int i = 0;
+while (i &lt; 5) {
+    i++;
+    if (i == 2) break;
+    cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+}
+</code></pre>
+<p>A. <code>1</code><br />
+B. <code>1 2</code><br />
+C. <code>1 2 3 4 5</code><br />
+D. 无输出  </p>
+<p><strong>答案：A</strong><br />
+<strong>解析</strong>：<code>i == 2</code> 时 <code>break</code> 终止循环，此前仅输出 <code>1</code>。  </p>
+<hr />
+<h4 id="5-continue-break"><strong>5. 关于 <code>continue</code> 和 <code>break</code> 的区别，错误的是？</strong></h4>
+<p>A. <code>continue</code> 跳过当前迭代，<code>break</code> 终止循环<br />
+B. <code>break</code> 可用于 <code>switch</code>，<code>continue</code> 不能<br />
+C. 两者均可用于所有循环结构<br />
+D. <code>continue</code> 会终止整个程序  </p>
+<p><strong>答案：D</strong><br />
+<strong>解析</strong>：<code>continue</code> 仅跳过当前迭代，不会终止程序。  </p>
+<hr />
+<h3 id="_1"><strong>答案汇总</strong></h3>
 <table>
 <thead>
 <tr>
-<th>授课日</th>
-<th>主题</th>
-<th>PPT讲义</th>
-<th>代码案例</th>
-<th>课后作业</th>
-<th>作业答案</th>
+<th>题号</th>
+<th>答案</th>
+<th>核心考点</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Day 1</td>
-<td>常量与变量</td>
-<td><a href="../day1/chap00%E7%BB%AA%E8%AE%BA.pptx">绪论</a>,<a href="../day1/chap01%E5%BC%95%E8%A8%80.pptx">引言</a></td>
-<td><a href="../day1/code.zip">参考代码</a></td>
-<td><a href="../day1/hw1.pdf">作业1</a></td>
-<td><a href="https://blog.csdn.net/yuliying/article/details/72898132">C语言的运算符优先级</a></td>
+<td>1</td>
+<td>B</td>
+<td><code>break</code> 的作用</td>
 </tr>
 <tr>
-<td>Day 2</td>
-<td>顺序结构</td>
-<td><a href="../day2/chap02%E7%94%A8C%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%A8%8B%E5%BA%8F.pptx">用C语言编写程序</a></td>
-<td><a href="../day2/code.zip">参考代码</a></td>
-<td><a href="../day2/hw2.pdf">作业2</a></td>
-<td><a href="../day2/hw2answer.pdf">作业2答案</a></td>
+<td>2</td>
+<td>B</td>
+<td><code>continue</code> 的跳过逻辑</td>
 </tr>
 <tr>
-<td>Day 3</td>
-<td>分支结构</td>
-<td><a href="../day2/chap03%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84.pptx">分支结构</a></td>
-<td><a href="../day3/code.zip">参考代码</a></td>
-<td><a href="../day3/hw3.pdf">作业3</a></td>
-<td><a href="../day3/hw3solution.pdf">作业3答案</a></td>
+<td>3</td>
+<td>A</td>
+<td>嵌套循环中的 <code>break</code></td>
 </tr>
 <tr>
-<td>Day 4</td>
-<td>循环结构</td>
-<td><a href="../day4/chap04%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84.pptx">循环结构</a></td>
-<td><a href="../day4/code.zip">参考代码</a></td>
-<td><a href="../day4/hw4.pdf">作业4</a></td>
-<td><a href="day4/hw4solution.pdf">作业4答案</a></td>
+<td>4</td>
+<td>A</td>
+<td><code>while</code> 循环的终止条件</td>
 </tr>
 <tr>
-<td>Day 5</td>
-<td>break和continue语句的应用</td>
-<td></td>
-<td><a href="day7/code.zip">参考代码</a></td>
-<td><a href="day5\hw5.pdf">作业5</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 6</td>
-<td>函数基础</td>
-<td><a href="../day6/chap05%E5%87%BD%E6%95%B0.pptx">函数基础</a></td>
-<td><a href="../day6/code.zip">参考代码</a></td>
-<td><a href="../day6/hw6.pdf">作业6</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 7</td>
-<td>结构体与联合体</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 8</td>
-<td>文件操作</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 9</td>
-<td>预处理与宏</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 10</td>
-<td>数据结构入门</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 11</td>
-<td>多文件项目管理</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Day 12</td>
-<td>综合项目实战</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>5</td>
+<td>D</td>
+<td><code>continue</code> 的误用</td>
 </tr>
 </tbody>
-</table></p>
+</table>
+<p><strong>用途</strong>：适合考察对 <code>break</code> 和 <code>continue</code> 的语法理解及实际应用场景。</p></p>
     </article>
 </section>
             <!-- endblock -->
@@ -279,11 +252,11 @@
 
     </main>
 
-        <script>var base_url = '..';</script>
-        <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/js/mkdocs.js"></script>
-			<script src="../search/main.js" defer></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
 
 </body>
 

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>作业6 - My Docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    首页
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../source/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    课程资料
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="6">作业6</h1>
+<hr />
+<h3 id="520"><strong>一、选择题</strong>（每题5分，共20分）</h3>
+<ol>
+<li><strong>关于函数的返回值，以下说法正确的是？</strong><br />
+   A. 函数可以没有返回值<br />
+   B. 返回值类型必须与函数声明一致<br />
+   C. 一个函数只能返回一个值<br />
+   D. <code>void</code> 类型的函数不能使用 <code>return</code> 语句  </li>
+</ol>
+<p><strong>答案</strong>：A<br />
+<strong>解析</strong>：<code>void</code> 函数无返回值，其他函数返回值需与声明一致，但可通过结构体/指针返回多个值。  </p>
+<ol>
+<li><strong>以下函数声明正确的是？</strong><br />
+   A. <code>int func(int a, b);</code><br />
+   B. <code>double func(int a, float b);</code><br />
+   C. <code>func(int a) { return a; }</code><br />
+   D. <code>void func(int a) return a;</code>  </li>
+</ol>
+<p><strong>答案</strong>：B<br />
+<strong>解析</strong>：A 缺少参数类型，C 缺少返回类型，D <code>void</code> 函数不应返回值。  </p>
+<ol>
+<li><strong>关于函数参数传递，错误的是？</strong><br />
+   A. 值传递不会修改实参<br />
+   B. 引用传递可以修改实参<br />
+   C. 指针传递本质是值传递<br />
+   D. 数组传递会复制所有元素  </li>
+</ol>
+<p><strong>答案</strong>：D<br />
+<strong>解析</strong>：数组传递时退化为指针，仅传递首地址。  </p>
+<hr />
+<h3 id="530"><strong>二、程序填空题</strong>（每空5分，共30分）</h3>
+<ol>
+<li>
+<p><strong>补全函数，计算两个整数的最大值</strong>：<br />
+<code>cpp  
+   int max(int a, int b) {  
+       // 补全条件表达式
+       if(a &gt; b) return ________;
+       else return _________;  
+   }</code><br />
+<strong>答案</strong>：a b<br />
+<strong>解析</strong>：<code>if(a &gt; b)</code> 条件表达式中，<code>a</code> 和 <code>b</code> 为变量，需使用 <code>()</code> 括起来。  </p>
+</li>
+<li>
+<p><strong>补全代码，调用函数输出1~n的和</strong>：<br />
+<code>cpp  
+   int sum(int n) {  
+       int s = 0;  
+       for (int i = 1; i &lt;= n; i++) __________;  // 补全累加语句  
+       return s;  
+   }  
+   int main() {  
+       cout &lt;&lt; sum(5);  // 输出15  
+   }</code><br />
+<strong>答案</strong>：<code>s = s + i</code>  </p>
+</li>
+</ol>
+<h3 id="50"><strong>三、编程题</strong>（50分）</h3>
+<ol>
+<li><strong>编写函数判断素数</strong>（20分）  </li>
+<li>函数名：<code>int isPrime(int n)</code>  </li>
+<li>功能：若 <code>n</code> 是素数返回 <code>true</code>，否则返回 <code>false</code>。  </li>
+<li>示例：<br />
+<code>c 
+     printf("%d",isPrime(7));  // 输出1（true）  
+     printf("%d",isPrime(4));  // 输出0（false）</code>  </li>
+</ol>
+<p><strong>参考代码</strong>：<br />
+<code>cpp  
+   int isPrime(int n) {  
+       if (n &lt;= 1) return false;  
+       for (int i = 2; i * i &lt;= n; i++)  
+           if (n % i == 0) return false;  
+       return true;  
+   }</code>  </p>
+<ol>
+<li><strong>编写函数找到两个数的最大公约数</strong>  </li>
+</ol>
+<p>编写一个函数 <code>int gcd(int a, int b)</code>，使用 <strong>欧几里得算法（辗转相除法）</strong> 计算并返回两个整数的最大公约数（GCD）。  </p>
+<p><strong>函数要求</strong>：<br />
+1. 正确处理所有正整数输入（无需考虑负数）。<br />
+2. 使用递归或循环实现均可。<br />
+3. 示例输入/输出：  </p>
+<table>
+<thead>
+<tr>
+<th>输入</th>
+<th>预期输出</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gcd(48, 60)</code></td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>gcd(17, 23)</code></td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>gcd(0, 5)</code></td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_1"><strong>参考代码（循环实现）</strong></h4>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    printf(&quot;%d\n&quot;, gcd(18,12))  // 输出6
+    printf(&quot;%d\n&quot;, gcd(7,5));    // 输出1
+    return 0;
+}
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
