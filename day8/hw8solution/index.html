@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>zuoye 7 - My Docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    首页
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../source/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    课程资料
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="zuoye-7">zuoye 7</h1>
+<hr />
+<h4 id="520"><strong>一、选择题</strong>（每题5分，共20分）</h4>
+<ol>
+<li><strong>以下关于数组初始化的语句，正确的是？</strong><br />
+   A. <code>int arr[] = {1,2,3};</code><br />
+   B. <code>int arr[3] = {1,2,3,4};</code><br />
+   C. <code>int arr[];</code><br />
+   D. <code>int arr[2] = {};</code>  </li>
+</ol>
+<p><strong>答案</strong>：A<br />
+<strong>解析</strong>：B选项越界，C未指定大小，D在C语言中非法（C++允许）。</p>
+<ol>
+<li><strong>若有定义 <code>int a[5] = {1,2};</code>，则 <code>a[0]</code> 的值是？</strong><br />
+   A. 0<br />
+   B. 1<br />
+   C. 随机值<br />
+   D. 编译错误  </li>
+</ol>
+<p><strong>答案</strong>：A<br />
+<strong>解析</strong>：<code>a[0]</code>被初始化为1</p>
+<ol>
+<li><strong>以下代码的输出是？</strong><br />
+<code>c
+   inttic int arr[3] = {5};
+   printf("%d", arr[1]);</code><br />
+   A. 5<br />
+   B. 0<br />
+   C. 随机值<br />
+   D. 编译错误  </li>
+</ol>
+<p><strong>答案</strong>：B<br />
+<strong>解析</strong>：静态数组部分初始化时，未指定的元素为0。</p>
+<ol>
+<li><strong>数组下标允许的范围是？</strong><br />
+   A. 从1到声明的大小<br />
+   B. 从0到声明的大小减1<br />
+   C. 任意整数<br />
+   D. 从0到声明的大小  </li>
+</ol>
+<p><strong>答案</strong>：B  </p>
+<hr />
+<h4 id="530"><strong>二、程序填空题</strong>（每空5分，共30分）</h4>
+<ol>
+<li><strong>逆序输出数组</strong><br />
+<code>c
+   #include &lt;stdio.h&gt;
+   int main() {
+       int arr[5] = {10, 20, 30, 40, 50};
+       for(int i = ________; i &gt;= 0; ________) {  // 填空1和2
+           printf("%d ", arr[i]);
+       }
+       return 0;
+   }</code><br />
+<strong>答案</strong>：  </li>
+<li>填空1：<code>4</code>  </li>
+<li>
+<p>填空2：<code>i--</code>  </p>
+</li>
+<li>
+<p><strong>求数组元素平均值</strong><br />
+<code>c
+   #include &lt;stdio.h&gt;
+   int main() {
+       float nums[4] = {2.5, 3.5, 4.0, 6.0};
+       float sum = 0;
+       for(int i = 0; i &lt; ________; i++) {  // 填空1
+           sum += ________;  // 填空2
+       }
+       printf("平均值: %.2f", sum / 4);
+       return 0;
+   }</code><br />
+<strong>答案</strong>：  </p>
+</li>
+<li>填空1：<code>4</code>  </li>
+<li>填空2：<code>nums[i]</code>  </li>
+</ol>
+<hr />
+<h4 id="50"><strong>三、编程题</strong>（50分）</h4>
+<ol>
+<li><strong>查找最大值</strong>（20分）  </li>
+<li>定义一个包含6个整数的数组。  </li>
+<li>编写程序找出数组中的最大值并输出。  </li>
+<li><strong>示例</strong>：<br />
+<code>c
+     int arr[6] = {3, 9, 2, 7, 1, 5};
+     // 输出：最大值是9</code></li>
+</ol>
+<p><strong>参考代码</strong>：<br />
+<code>c
+   #include &lt;stdio.h&gt;
+   int main() {
+       int arr[6] = {3, 9, 2, 7, 1, 5};
+       int max = arr[0];
+       for(int i = 1; i &lt; 6; i++) {
+           if(arr[i] &gt; max) max = arr[i];
+       }
+       printf("最大值是%d", max);
+       return 0;
+   }</code></p>
+<ol>
+<li><strong>选择排序</strong>（30分）  </li>
+</ol>
+<p>编写一个C语言程序，实现选择排序算法对一维数组进行升序排序，并输出排序后的结果$$</p>
+<ul>
+<li>输入一个n值($1/\leq n\leq 10$)</li>
+<li>输入n个整数，用空格隔开</li>
+<li>
+<p>输出排序后的结果，用空格隔开</p>
+</li>
+<li>
+<p>输入样例</p>
+</li>
+</ul>
+<pre><code>6
+
+8 3 6 2 7 5
+</code></pre>
+<ul>
+<li>输出样例</li>
+</ul>
+<pre><code>2 3 5 6 7 8
+</code></pre>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+void selectionSort(int arr[], int size) {
+    for (int i = 0; i &lt; size - 1; i++) {
+        int minIndex = i;
+        // 找到未排序部分的最小值索引
+        for (int j = i + 1; j &lt; size; j++) {
+            if (arr[j] &lt; arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // 交换最小值与当前未排序部分的第一个元素
+        int temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+}
+
+int main() {
+    int arr[] = {8, 3, 6, 2, 7, 5};
+    int size = sizeof(arr) / sizeof(arr[0]);
+
+    // 调用选择排序函数
+    selectionSort(arr, size);
+
+    // 输出排序结果
+    printf(&quot;排序结果：&quot;);
+    for (int i = 0; i &lt; size; i++) {
+        printf(&quot;%d &quot;, arr[i]);
+    }
+    return 0;
+}
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
