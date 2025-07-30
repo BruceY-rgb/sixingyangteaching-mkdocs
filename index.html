@@ -161,41 +161,43 @@
 <li><strong>实战驱动学习</strong>：每课配套编程练习与项目  </li>
 </ul>
 <h2 id="_2">🎯 今日精选</h2>
-<pre><code class="language-c">/* 选择法排序 */
+<pre><code class="language-c">/* 方阵转置 */
 # include &lt;stdio.h&gt;
-# define MAXN 10                    /* 定义符号常量MAXN */
+# define MAXN 6             /* 定义符号常量MAXN */
 int main(void)
 {
-    int i, index, k, n, temp;
-    int a[MAXN];    
+    int i, j, n, temp;
+    int a[MAXN][ MAXN];
 
-    printf(&quot;Enter n: &quot;);                /* 提示输入n */
+    /* 给二维数组赋值 */
+    printf(&quot;Enter n: &quot;); 
     scanf(&quot;%d&quot;, &amp;n);
-    printf(&quot;Enter %d integers: &quot;, n);   /* 提示输入n 个数 */
+    for(i = 0; i &lt; n; i++){             /* 行下标是外循环的循环变量 */        
+        for(j = 0; j &lt; n; j++){         /* 列下标是内循环的循环变量 */       
+            a[i][j] = i * n + j + 1;    /* 给数组元素赋值 */
+        }   
+    }       
+    /* 行列互换*/
     for(i = 0; i &lt; n; i++){
-        scanf(&quot;%d&quot;, &amp;a[i]);
-    }
-    /* 对n个数排序 */
-    for(k = 0; k &lt; n-1; k++){
-        index = k;                      /* index存放最小值所在的下标 */
-        for(i = k + 1; i &lt; n; i++){     /* 寻找最小值所在下标 */
-            if(a[i] &lt; a[index]){
-                index = i;   
+        for(j = 0; j &lt; n; j++){
+            if(i &lt;= j){                 /* 只遍历上三角阵 */
+                temp = a[i][j];         /* 以下3句交换 a[i][j] 和 a[j][i] */
+                a[i][j] = a[j][i];
+                a[j][i] = temp;
             }
-        } 
-        temp = a[index];                /* 最小元素与下标为k的元素交换 */
-        a[index] = a[k];
-        a[k] = temp;
+        }
     }
-
-    printf(&quot;After sorted: &quot;, n);         /* 输出n个数组元素的值 */
-    for(i = 0; i &lt; n; i++){       
-        printf(&quot;%d &quot;, a[i]);
+    /* 按矩阵的形式输出数组a */
+    for(i = 0; i &lt; n; i++){                 /* 针对所有行的循环 */
+        for(j = 0; j &lt; n; j++){             /* 输出第i行的所有元素 */      
+            printf(&quot;%4d&quot;, a[i][j]); 
+        }
+        printf(&quot;\n&quot;);                       /* 换行 */         
     }
-    printf(&quot;\n&quot;);
 
     return 0;
-}  
+}    
+
 </code></pre>
 <h2 id="_3">📅 课程安排</h2>
 <table>

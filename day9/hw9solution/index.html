@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>作业8 - My Docs</title>
+        <title>Hw9solution - My Docs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,162 +134,155 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="8">作业8</h1>
+        <p><h3 id="c"><strong>C语言字符串与二维数组基础应用作业</strong></h3>
 <hr />
 <h4 id="520"><strong>一、选择题</strong>（每题5分，共20分）</h4>
 <ol>
-<li><strong>以下关于数组初始化的语句，正确的是？</strong><br />
-   A. <code>int arr[] = {1,2,3};</code><br />
-   B. <code>int arr[3] = {1,2,3,4};</code><br />
-   C. <code>int arr[];</code><br />
-   D. <code>int arr[2] = {};</code>  </li>
+<li><strong>以下关于字符串初始化的语句，正确的是？</strong><br />
+   A. <code>char str[5] = "hello";</code><br />
+   B. <code>char str[] = {'h','e','l','l','o'};</code><br />
+   C. <code>char str[5]; str = "hello";</code><br />
+   D. <code>char *str; str = "hello";</code>  </li>
 </ol>
-<p><strong>答案</strong>：A<br />
-<strong>解析</strong>：B选项越界，C未指定大小，D在C语言中非法（C++允许）。</p>
+<p><strong>答案</strong>：D<br />
+<strong>解析</strong>：<br />
+   - A错误：长度不足（需6字节存储"hello\0"）。<br />
+   - B错误：不是字符串（缺少结束符'\0'）。<br />
+   - C错误：数组名不能直接赋值。  </p>
 <ol>
-<li><strong>若有定义 <code>int a[5] = {1,2};</code>，则 <code>a[0]</code> 的值是？</strong><br />
-   A. 0<br />
-   B. 1<br />
-   C. 随机值<br />
-   D. 编译错误  </li>
+<li><strong>若有定义 <code>char s[] = "abc";</code>，则 <code>sizeof(s)</code> 的值是？</strong><br />
+   A. 3<br />
+   B. 4<br />
+   C. 编译错误<br />
+   D. 取决于编译器  </li>
 </ol>
 <p><strong>答案</strong>：B<br />
-<strong>解析</strong>：<code>a[0]</code>被初始化为1</p>
+<strong>解析</strong>：包含隐式结束符'\0'，共4字节。</p>
 <ol>
 <li><strong>以下代码的输出是？</strong><br />
 <code>c
-   static int arr[3] = {5};
-   printf("%d", arr[1]);</code><br />
-   A. 5<br />
-   B. 0<br />
+   int arr[2][3] = {{1,2},{3}};
+   printf("%d", arr[1][2]);</code><br />
+   A. 0<br />
+   B. 3<br />
    C. 随机值<br />
    D. 编译错误  </li>
 </ol>
-<p><strong>答案</strong>：B<br />
-<strong>解析</strong>：静态数组部分初始化时，未指定的元素为0。</p>
+<p><strong>答案</strong>：A<br />
+<strong>解析</strong>：未显式初始化的元素自动补0。</p>
 <ol>
-<li><strong>数组下标允许的范围是？</strong><br />
-   A. 从1到声明的大小<br />
-   B. 从0到声明的大小减1<br />
-   C. 任意整数<br />
-   D. 从0到声明的大小  </li>
+<li><strong>二维数组 <code>int a[3][4]</code> 的元素 <code>a[2][1]</code> 的地址计算公式是？</strong><br />
+   A. <code>&amp;a[0][0] + 2*4 + 1</code><br />
+   B. <code>a + 2*4 + 1</code><br />
+   C. <code>&amp;a[0] + 2*4 + 1</code><br />
+   D. <code>a[0] + 2*4 + 1</code>  </li>
 </ol>
-<p><strong>答案</strong>：B  </p>
+<p><strong>答案</strong>：A<br />
+<strong>解析</strong>：行优先存储，偏移量为 <code>行号*列数 + 列号</code>。</p>
 <hr />
 <h4 id="530"><strong>二、程序填空题</strong>（每空5分，共30分）</h4>
 <ol>
-<li><strong>逆序输出数组</strong><br />
+<li><strong>字符串反转</strong><br />
 <code>c
    #include &lt;stdio.h&gt;
-   int main() {
-       int arr[5] = {10, 20, 30, 40, 50};
-       for(int i = ________; i &gt;= 0; ________) {  // 填空1和2
-           printf("%d ", arr[i]);
+   #include &lt;string.h&gt;
+   void reverse(char s[]) {
+       int len = ________;                  // 填空1：获取字符串长度
+       for (int i = 0; i &lt; ________; i++) { // 填空2：循环条件
+           char temp = s[i];
+           s[i] = s[________];             // 填空3：对称位置索引
+           s[len-1-i] = temp;
        }
+   }
+   int main() {
+       char str[] = "hello";
+       reverse(str);
+       printf("%s", str);  // 输出：olleh
        return 0;
    }</code><br />
 <strong>答案</strong>：  </li>
-<li>填空1：<code>4</code>  </li>
+<li>填空1：<code>strlen(s)</code>  </li>
+<li>填空2：<code>len/2</code>  </li>
 <li>
-<p>填空2：<code>i--</code>  </p>
+<p>填空3：<code>len-1-i</code>  </p>
 </li>
 <li>
-<p><strong>求数组元素平均值</strong><br />
+<p><strong>二维数组求最大值</strong><br />
 <code>c
    #include &lt;stdio.h&gt;
    int main() {
-       float nums[4] = {2.5, 3.5, 4.0, 6.0};
-       float sum = 0;
-       for(int i = 0; i &lt; ________; i++) {  // 填空1
-           sum += ________;  // 填空2
+       int arr[2][3] = {{5, 9, 2}, {7, 1, 4}};
+       int max = ________;                   // 填空1：初始化max
+       for (int i = 0; i &lt; 2; i++) {
+           for (int j = 0; j &lt; ________; j++) { // 填空2：内层循环条件
+               if (________ &gt; max) {         // 填空3：比较条件
+                   max = arr[i][j];
+               }
+           }
        }
-       printf("平均值: %.2f", sum / 4);
+       printf("最大值: %d", max);  // 输出：9
        return 0;
    }</code><br />
 <strong>答案</strong>：  </p>
 </li>
-<li>填空1：<code>4</code>  </li>
-<li>填空2：<code>nums[i]</code>  </li>
+<li>填空1：<code>arr[0][0]</code>  </li>
+<li>填空2：<code>3</code>  </li>
+<li>填空3：<code>arr[i][j]</code>  </li>
 </ol>
 <hr />
 <h4 id="50"><strong>三、编程题</strong>（50分）</h4>
 <ol>
-<li><strong>查找最大值</strong>（20分）  </li>
-<li>定义一个包含6个整数的数组。  </li>
-<li>编写程序找出数组中的最大值并输出。  </li>
+<li><strong>字符串连接函数</strong>（20分）  </li>
+<li>编写函数 <code>void my_strcat(char dest[], char src[])</code>，实现将 <code>src</code> 字符串连接到 <code>dest</code> 末尾。  </li>
+<li>要求：不能使用 <code>&lt;string.h&gt;</code> 中的库函数。  </li>
 <li><strong>示例</strong>：<br />
 <code>c
-     int arr[6] = {3, 9, 2, 7, 1, 5};
-     // 输出：最大值是9</code></li>
+     char s1[20] = "hello";
+     char s2[] = "world";
+     my_strcat(s1, s2);  // s1变为"helloworld"</code></li>
+</ol>
+<p><strong>参考代码</strong>：<br />
+<code>c
+   void my_strcat(char dest[], char src[]) {
+       int i = 0, j = 0;
+       while (dest[i] != '\0') i++;  // 找到dest末尾
+       while (src[j] != '\0') {
+           dest[i++] = src[j++];     // 逐个复制字符
+       }
+       dest[i] = '\0';              // 添加结束符
+   }</code></p>
+<ol>
+<li><strong>矩阵转置</strong>（30分）  </li>
+<li>编写程序，将二维数组 <code>a[3][3]</code> 转置（行列互换），结果存入数组 <code>b[3][3]</code> 并输出。  </li>
+<li><strong>示例输入</strong>：<br />
+<code>c
+     int a[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};</code></li>
+<li><strong>示例输出</strong>：<br />
+<code>1 4 7
+     2 5 8
+     3 6 9</code></li>
 </ol>
 <p><strong>参考代码</strong>：<br />
 <code>c
    #include &lt;stdio.h&gt;
    int main() {
-       int arr[6] = {3, 9, 2, 7, 1, 5};
-       int max = arr[0];
-       for(int i = 1; i &lt; 6; i++) {
-           if(arr[i] &gt; max) max = arr[i];
+       int a[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+       int b[3][3];
+       for (int i = 0; i &lt; 3; i++) {
+           for (int j = 0; j &lt; 3; j++) {
+               b[j][i] = a[i][j];  // 行列互换
+           }
        }
-       printf("最大值是%d", max);
+       // 输出结果
+       for (int i = 0; i &lt; 3; i++) {
+           for (int j = 0; j &lt; 3; j++) {
+               printf("%d ", b[i][j]);
+           }
+           printf("\n");
+       }
        return 0;
    }</code></p>
-<ol>
-<li><strong>选择排序</strong>（30分）  </li>
-</ol>
-<p>编写一个C语言程序，实现选择排序算法对一维数组进行升序排序，并输出排序后的结果</p>
-<ul>
-<li>输入一个n值($1/\leq n\leq 10$)</li>
-<li>输入n个整数，用空格隔开</li>
-<li>
-<p>输出排序后的结果，用空格隔开</p>
-</li>
-<li>
-<p>输入样例</p>
-</li>
-</ul>
-<pre><code>6
-
-8 3 6 2 7 5
-</code></pre>
-<ul>
-<li>输出样例</li>
-</ul>
-<pre><code>2 3 5 6 7 8
-</code></pre>
-<pre><code class="language-c">#include &lt;stdio.h&gt;
-
-void selectionSort(int arr[], int size) {
-    for (int i = 0; i &lt; size - 1; i++) {
-        int minIndex = i;
-        // 找到未排序部分的最小值索引
-        for (int j = i + 1; j &lt; size; j++) {
-            if (arr[j] &lt; arr[minIndex]) {
-                minIndex = j;
-            }
-        }
-        // 交换最小值与当前未排序部分的第一个元素
-        int temp = arr[i];
-        arr[i] = arr[minIndex];
-        arr[minIndex] = temp;
-    }
-}
-
-int main() {
-    int arr[] = {8, 3, 6, 2, 7, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
-
-    // 调用选择排序函数
-    selectionSort(arr, size);
-
-    // 输出排序结果
-    printf(&quot;排序结果：&quot;);
-    for (int i = 0; i &lt; size; i++) {
-        printf(&quot;%d &quot;, arr[i]);
-    }
-    return 0;
-}
-</code></pre></p>
+<hr /></p>
     </article>
 </section>
             <!-- endblock -->
