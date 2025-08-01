@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>作业11 - My Docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    首页
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../source/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    课程资料
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="11">作业11</h1>
+<h2 id="5-20"><strong>一、选择题（每题 5 分，共 20 分）</strong></h2>
+<ol>
+<li>
+<p><strong><code>strlen</code> 函数的作用是（  ）</strong><br />
+   A) 计算字符串的长度<br />
+   B) 比较两个字符串<br />
+   C) 复制字符串<br />
+   D) 连接两个字符串  </p>
+</li>
+<li>
+<p><strong>以下哪个函数可以用于字符串复制？（  ）</strong><br />
+   A) <code>strcat</code><br />
+   B) <code>strcmp</code><br />
+   C) <code>strcpy</code><br />
+   D) <code>strlen</code>  </p>
+</li>
+<li>
+<p><strong><code>strcmp("abc", "ABC")</code> 的返回值可能是（  ）</strong><br />
+   A) <code>0</code><br />
+   B) <code>1</code><br />
+   C) <code>-1</code><br />
+   D) <code>32</code>  </p>
+</li>
+<li>
+<p><strong>以下代码的输出是（  ）</strong><br />
+<code>c
+   char str1[10] = "Hello";
+   char str2[] = "World";
+   strcat(str1, str2);
+   printf("%s", str1);</code><br />
+   A) <code>Hello</code><br />
+   B) <code>World</code><br />
+   C) <code>HelloWorld</code><br />
+   D) 程序崩溃  </p>
+</li>
+</ol>
+<hr />
+<h2 id="5-30"><strong>二、程序填空题（每空 5 分，共 30 分）</strong></h2>
+<h3 id="1"><strong>1. 计算字符串长度</strong></h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int my_strlen(const char* str) {
+    int len = 0;
+    while (________) {  // 填空 1
+        len++;
+        str++;
+    }
+    return len;
+}
+
+int main() {
+    char s[] = &quot;Hello&quot;;
+    printf(&quot;%d\n&quot;, my_strlen(s));  // 输出 5
+    return 0;
+}
+</code></pre>
+<hr />
+<h3 id="2"><strong>2. 字符串复制</strong></h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+void my_strcpy(char* dest, const char* src) {
+    while (________) {  // 填空 2
+        *dest = *src;
+        dest++;
+        src++;
+    }
+    ________;  // 填空 3
+}
+
+int main() {
+    char src[] = &quot;World&quot;;
+    char dest[10];
+    my_strcpy(dest, src);
+    printf(&quot;%s\n&quot;, dest);  // 输出 &quot;World&quot;
+    return 0;
+}
+</code></pre>
+<hr />
+<h3 id="3"><strong>3. 字符串比较</strong></h3>
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int my_strcmp(const char* s1, const char* s2) {
+    while (*s1 &amp;&amp; *s2 &amp;&amp; ________) {  // 填空 4
+        s1++;
+        s2++;
+    }
+    return ________;  // 填空 5
+}
+
+int main() {
+    printf(&quot;%d\n&quot;, my_strcmp(&quot;apple&quot;, &quot;banana&quot;));  // 输出 -1
+    return 0;
+}
+</code></pre>
+<hr />
+<h2 id="50"><strong>三、编程题（50 分）</strong></h2>
+<h3 id="1-strcat"><strong>1. 字符串连接（<code>strcat</code> 实现）</strong></h3>
+<p>编写一个函数 <code>void my_strcat(char* dest, const char* src)</code>，实现字符串连接功能。  </p>
+<p><strong>示例</strong>：  </p>
+<pre><code class="language-c">char str1[20] = &quot;Hello&quot;;
+char str2[] = &quot;World&quot;;
+my_strcat(str1, str2);
+printf(&quot;%s\n&quot;, str1);  // 输出 &quot;HelloWorld&quot;
+</code></pre>
+<hr />
+<h3 id="2-strchr"><strong>2. 查找字符（<code>strchr</code> 实现）</strong></h3>
+<p>编写一个函数 <code>char* my_strchr(const char* str, char ch)</code>，查找字符 <code>ch</code> 在 <code>str</code> 中第一次出现的位置，返回其指针，若未找到则返回 <code>NULL</code>。  </p>
+<p><strong>示例</strong>：  </p>
+<pre><code class="language-c">char str[] = &quot;Hello&quot;;
+char* p = my_strchr(str, 'l');
+if (p != NULL) {
+    printf(&quot;%s\n&quot;, p);  // 输出 &quot;llo&quot;
+}
+</code></pre></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>

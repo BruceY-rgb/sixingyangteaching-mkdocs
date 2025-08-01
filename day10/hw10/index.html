@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>作业10 - My Docs</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+        
+        
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
+
+        
+            <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
+
+    <main class="d-flex">
+
+        <!-- block sidebar -->
+            <nav id="sidebar" class="sidebar drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        
+
+        <div class="drac-text-center">
+            
+                <span class="drac-text drac-line-height drac-text-white">My Docs</span>
+            
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    首页
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="../../source/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    课程资料
+                </a>
+            </li>
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
+        <!-- endblock -->
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div class="content">
+            <!-- block header -->
+                <header>
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav text-md-center">
+
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
+                        
+                    </li>
+                    <!--  endblock -->
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+            <!-- endblock -->
+
+            <!-- block content -->
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="10">作业10</h1>
+<h4 id="520"><strong>一、选择题</strong>（每题5分，共20分）</h4>
+<ol>
+<li><strong>以下关于指针的描述，正确的是？</strong><br />
+   A. 指针是存储变量地址的变量<br />
+   B. 指针可以直接存储整数值<br />
+   C. 指针的大小与它所指向的数据类型无关<br />
+   D. 指针变量名前面需要加<code>*</code>声明  </li>
+</ol>
+<hr />
+<ol>
+<li><strong>若有<code>int a = 10; int *p = &amp;a;</code>，则<code>*p</code>的值是？</strong><br />
+   A. <code>a</code>的地址<br />
+   B. <code>10</code><br />
+   C. <code>p</code>的地址<br />
+   D. 随机值  </li>
+</ol>
+<hr />
+<ol>
+<li><strong>以下代码的输出是？</strong><br />
+<code>c
+   int x = 5, y = 10;
+   int *ptr = &amp;x;
+   *ptr = y;
+   printf("%d", x);</code><br />
+   A. <code>5</code><br />
+   B. <code>10</code><br />
+   C. <code>x</code>的地址<br />
+   D. 编译错误  </li>
+</ol>
+<hr />
+<ol>
+<li><strong>关于<code>NULL</code>指针，错误的是？</strong><br />
+   A. <code>NULL</code>指针不指向任何有效内存<br />
+   B. 解引用<code>NULL</code>指针会导致运行时错误<br />
+   C. <code>NULL</code>与<code>0</code>等价<br />
+   D. <code>malloc()</code>失败时返回<code>NULL</code>  </li>
+</ol>
+<hr />
+<h4 id="530"><strong>二、填空题</strong>（每空5分，共30分）</h4>
+<ol>
+<li><strong>补全代码，通过指针交换两个变量的值</strong>：<br />
+<code>c
+   void swap(int *a, int *b) {
+       int temp = ______;  // 填空1
+       ______ = *b;        // 填空2
+       *b = temp;
+   }</code>  </li>
+</ol>
+<hr />
+<ol>
+<li><strong>补全指针声明</strong>：<br />
+<code>c
+   int x = 100;
+   ______ ptr = &amp;x;  // 声明指向x的指针
+   printf("%d", ______); // 输出x的值</code>  </li>
+</ol>
+<hr />
+<ol>
+<li><strong>以下代码的输出是</strong>：<br />
+<code>c
+   char str[] = "Hello";
+   char *p = str;
+   printf("%c", *(p + 2));</code>  </li>
+</ol>
+<hr />
+<h4 id="50"><strong>三、编程题</strong>（50分）</h4>
+<ol>
+<li><strong>指针基础操作</strong>（20分）  </li>
+<li>声明一个整数变量<code>num</code>并赋值为<code>50</code>  </li>
+<li>声明指针<code>p</code>指向<code>num</code>  </li>
+<li>通过指针修改<code>num</code>的值为<code>100</code>  </li>
+<li>
+<p>输出<code>num</code>的值和地址  </p>
+</li>
+<li>
+<p><strong>指针与数组</strong>（30分）  </p>
+</li>
+<li>定义一个包含<code>{3, 7, 2, 9}</code>的整型数组  </li>
+<li>使用指针遍历数组并计算元素总和  </li>
+<li>输出总和及最大值的地址  </li>
+</ol></p>
+    </article>
+</section>
+            <!-- endblock -->
+
+            <!-- block footer -->
+                <footer>
+    <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+        <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
+            Made with Dracula Theme for MkDocs
+        </a>
+    </div>
+</footer>
+            <!-- endblock -->
+        </div>
+
+    </main>
+
+        <script>var base_url = '../..';</script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
+			<script src="../../search/main.js" defer></script>
+
+</body>
+
+</html>
